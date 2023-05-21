@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap);
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #dee0e3;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #36455c;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.heading p {
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row-reverse; /* Reverses the order of flex items */
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.about-us img {
+    flex: 0 50%;
+    width: 20%; /* Adjust the width as desired */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.content {
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+.content h2 {
+  color: #36455c;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.content p {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.about img {
+    flex: 0 50%;
+    width: 20%; /* Adjust the width as desired */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.goal {
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.goal h2 {
+    color: #36455c;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.goal p {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media(max-width: 768px){
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us img {
+        width: 100%;
+    }
+    
+    .content {
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    goal {
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
