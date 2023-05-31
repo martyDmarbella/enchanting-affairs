@@ -7,11 +7,11 @@ import catering from '../assets/images/catering.jpg'
 function Services() {
   return (
     <>
-      <div className="container-fluid">
-        <h1 className='text-center fw-bold'>
+      <div className="container-fluid"style={{ marginTop: '100px' }}>
+        <h1 className='text-center fw-bold' >
           Our Services
         </h1>
-        <div className="row mb-5" style={{ marginTop: '30px' }}>
+        <div className="row mb-5" style={{ marginTop: '50px' }}>
           <div className="col-12 col-sm-6 col-md-3 m-auto">
             
             <div className="card shadow">
@@ -44,7 +44,7 @@ function Services() {
                 <h3 className="text-center">Content Creation</h3>
                 <hr className="mx-auto w-75" />
                 <p>
-                   Experience the magic of Enchanting Affairs' photographers and videographers. With an exceptional eye for detail and creativity,our team captures every precious moment.
+                   Experience the magic of Enchanting Affairs' photographers and videographers. With an exceptional eye for detail and creativity, our team captures every precious moment.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ function Services() {
                 <h3 className="text-center">Catering</h3>
                 <hr className="mx-auto w-75" />
                 <p>
-                Indulge in the culinary delights of Enchanting Affairs Event Management's catering service. Our team of culinary experts is dedicated to creating an extraordinary dining experience for your event. 
+                Indulge in the culinary delights of Enchanting Affairs Event Management's catering service. Our team of culinary experts is dedicated to creating an extraordinary dining experience. 
                 </p>
               </div>
             </div>

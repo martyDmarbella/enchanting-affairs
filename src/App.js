@@ -1,28 +1,27 @@
-
-
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
+import React from "react";
+import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import HeroBanner from './components/HeroBanner';
-
-
-
-
+import Gallery from "./pages/Gallery";
+import Services from "./pages/Services";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
-     <Navbar />
-     <HeroBanner />
-     <About />
-     <Gallery />
-     <Services />
-     <Contact />
-     <Footer />
-    </>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
